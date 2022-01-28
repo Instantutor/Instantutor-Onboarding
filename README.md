@@ -25,6 +25,6 @@ With git installed do the following:
 8. Create a pull request
 
 I'm done with this tutorial:
-* Samyuth
+* David Fuentes Benitez
 
 If you can do the above you know all the basic commands you need to contribute to this repository.
