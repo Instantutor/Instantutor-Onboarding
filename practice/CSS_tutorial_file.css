@@ -1,0 +1,41 @@
+
+/*This is a css tutorial document*/
+
+p {
+    /*This style section will force all paragraphs to have pink text that is aligned in the middle*/
+    color: rgb(255, 0, 234);
+    text-align: center;
+}
+
+#para1 {
+    /*This style section will force the first paragraph to be Blue and left aligned*/
+    color: blue;
+    text-align: left;
+}
+
+.right {
+    /*This style section will set all elements with the right class to have red text and be right aligned.*/
+    color:red;
+    text-align:right;
+}
+
+/*
+
+This following style section would affect everything if not commented out
+
+* {
+    text-align: center;
+    color: blue;
+}
+
+
+You can also group elements if you want them to have the same style.
+
+h1, h2, p {
+    text-align: center;
+    color: red;
+}
+
+The above section would affect h1, h2, and p.
+*/
+
