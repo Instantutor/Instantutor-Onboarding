@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './dog.png';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Changed the photo to be my dog. I'm happy that the pic still spins.
         </p>
         <a
           className="App-link"
