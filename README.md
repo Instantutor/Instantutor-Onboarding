@@ -35,6 +35,8 @@ With git installed do the following:
 I'm done with this tutorial:
 * Samyuth
 * James D'Atri
+* Stanley Guo
+* Shankar Veludandi
 
 If you can do the above you know all the basic commands you need to contribute to this repository.
 
