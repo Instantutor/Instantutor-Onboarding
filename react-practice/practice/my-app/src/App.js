@@ -1,24 +1,21 @@
-import logo from './dog.png';
 import './App.css';
 
 function App() {
+
+  const name = 'Dave'
+  const x = 7
+  const y = true
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Changed the photo to be my dog. I'm happy that the pic still spins.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello from James - React tutorial</h1>
+      <h2>Hello {name} it has been {49 / x} years since you have turned me on.</h2>
+      <h3>Sup, look at this if else {y ? 'True' : 'False'} </h3>
     </div>
+
+    /*
+    Can't have any components outside of the Div since that is the singular parent component.
+    */
   );
 }
 
