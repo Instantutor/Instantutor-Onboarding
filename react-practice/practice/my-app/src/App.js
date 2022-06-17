@@ -1,4 +1,5 @@
 import './App.css';
+import Header from './Components/Header'
 
 function App() {
 
@@ -7,10 +8,11 @@ function App() {
   const y = true
 
   return (
-    <div className="App">
+    <div className="container">
+      <Header></Header>
       <h1>Hello from James - React tutorial</h1>
       <h2>Hello {name} it has been {49 / x} years since you have turned me on.</h2>
-      <h3>Sup, look at this if else {y ? 'True' : 'False'} </h3>
+      <h3>Sup, look at this if else: {y ? 'True' : 'False'} </h3>
     </div>
 
     /*
