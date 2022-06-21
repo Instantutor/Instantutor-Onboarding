@@ -26,6 +26,19 @@ function App() {
     },    
 ])
 
+  // Creating a delete funtion
+
+  const deleteTask = (id) => {
+    console.log('delete', id)
+    setTasks(tasks.filter((task) => task.id !== id))
+  }
+
+  // Toggle Reminder
+  const toggleReminder = (id) => {
+    setTasks(tasks.map((task) => task.id === id ? { ...task, reminder: ! task.reminder} : task))
+    console.log(id)
+  }
+
   const name = 'Dave'
   const x = 7
   const y = true
@@ -33,7 +46,12 @@ function App() {
   return (
     <div className="container">
       <Header/>
-      <Tasks tasks={tasks}/>
+      {tasks.length > 0 ? (
+        <Tasks tasks={tasks} onDelete=
+        {deleteTask} onToggle = {toggleReminder}/>
+      ) : (
+        'No Tasks to Show'
+      )}
       <h1>Hello from James - React tutorial</h1>
       <h2>Hello {name} it has been {49 / x} years since you have turned me on.</h2>
       <h3>Sup, look at this if else: {y ? 'True' : 'False'} </h3>
