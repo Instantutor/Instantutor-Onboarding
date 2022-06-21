@@ -11,9 +11,10 @@ const Header = ({title}) => {
     <header className='header'>
         
         <h1>{title}</h1>
-        <Button color='green' text='Hello' onClick={onClick}/>
+        <Button color='black' text='Add' onClick={onClick} />
+        {/* <Button color='green' text='Hello' onClick={onClick}/>
         <Button color='blue' text='Good Evening' onClick={onClick}/>
-        <Button color='purple' text='Good Night' onClick={onClick}/>
+        <Button color='purple' text='Good Night' onClick={onClick}/> */}
 
     </header>
   )

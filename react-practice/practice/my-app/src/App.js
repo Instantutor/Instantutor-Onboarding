@@ -2,6 +2,7 @@ import './App.css';
 import {useState} from 'react'
 import Header from './Components/Header'
 import Tasks from './Components/Tasks'
+import AddTask from './Components/AddTask'
 
 function App() {
 
@@ -46,15 +47,16 @@ function App() {
   return (
     <div className="container">
       <Header/>
+      <AddTask />
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete=
         {deleteTask} onToggle = {toggleReminder}/>
       ) : (
         'No Tasks to Show'
       )}
-      <h1>Hello from James - React tutorial</h1>
+      {/* <h1>Hello from James - React tutorial</h1>
       <h2>Hello {name} it has been {49 / x} years since you have turned me on.</h2>
-      <h3>Sup, look at this if else: {y ? 'True' : 'False'} </h3>
+      <h3>Sup, look at this if else: {y ? 'True' : 'False'} </h3> */}
     </div>
 
     /*
